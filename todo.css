@@ -1,0 +1,117 @@
+*{
+    margin:0;
+    padding:0;
+    font-family: 'Vollkorn', serif;
+    background-color:rgb(250, 3, 155);
+    
+}
+h1{
+    text-align:center;
+    color:white;
+}
+.main{
+    position: relative;
+    width:330px;
+    height:800px;
+    margin:240px auto;
+    border-radius: 10px;
+    background:white;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.main .picture img{
+    border-top-left-radius:10px;
+    border-top-right-radius:10px;
+    height:200px;
+    width:330px;
+    
+}
+
+.main .picture {
+    height: 200px;
+}
+
+.main .content{
+    height: 550px;
+    background:white;
+}
+
+.main .adding{
+    height: 50px;
+    background:white;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.refresh #clear{
+ position: absolute;
+  top: 8px;
+  right: 16px;
+  font-size:20px;
+  background: transparent;
+  color:white
+}
+
+#date{
+    position: absolute;
+    bottom:8px;
+    left:16px;
+    background-color: transparent;
+    color:white
+}
+
+.picture{
+    position: relative;
+}
+
+.adding{
+    background-color: white;
+    display: flex;
+    direction: row;
+    
+}
+#add{
+    font-size:35px;
+    background-color:white;
+    color:rgb(101, 101, 230);
+    bottom:8px;
+    left:5px;
+    padding-left:10px;
+    
+}
+
+div #input{
+    border-radius: 5px;
+    background-color: white;
+    font-size:20px;
+    height: 30px;
+    text-align: center;
+    padding-left:5px;
+    
+}
+
+#item{
+    list-style: none;
+    background-color: white;
+    display:flex;
+    direction: row;
+    justify-content: space-between;
+    color:green
+}
+
+#item i{
+    background-color: transparent;
+    font-size:20px;
+    padding-left:10px;
+    padding-right: 10px;
+    
+}
+#item p{
+    background-color: white;
+    font-size:20px;
+    padding-left:15px;
+    padding-right:15px;
+    color:black
+}
+
+
+
