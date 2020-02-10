@@ -2,7 +2,7 @@ const clear = document.querySelector(".refresh");
 const dateElement = document.getElementById("date");
 const list = document.getElementById("list");
 const input = document.getElementById("input");
-
+const add = document.getElementById("addbtn");
 //Classes Check
 
 const check = "fa-check-circle";
