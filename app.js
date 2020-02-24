@@ -45,7 +45,7 @@ clear.addEventListener("click",function(){
 })
 
 //Today's Date
-const options= {weekday : "long", month : "long", day : "numeric"};
+const options= {weekday : "short", month : "long", day : "numeric"};
 const today = new Date();
 
 dateElement.innerHTML=today.toLocaleDateString("en-US", options)
