@@ -75,7 +75,7 @@ function addToDo(toDo ,id, done, trash){
 
 //Add Item to the list of Todo
 
-document.addEventListener("keyup", function(even){
+document.addEventListener("keyup", function(event){
     if(event.keyCode == 13){
         const toDo= input.value;
         if(toDo){
@@ -95,6 +95,26 @@ localStorage.setItem("TODO",JSON.stringify(LIST));
         }
         input.value="";
     }
+})
+
+add.addEventListener('click',()=>{
+    const toDo= input.value;
+        if(toDo){
+            addToDo(toDo,id,false,false);
+            LIST.push({
+                name:toDo,
+                id:id,
+                done:false,
+                trash:false,
+            });
+
+            //add items to local storage
+localStorage.setItem("TODO",JSON.stringify(LIST));
+
+
+            id++
+        }
+        input.value="";
 })
 
 //Complete Todo
